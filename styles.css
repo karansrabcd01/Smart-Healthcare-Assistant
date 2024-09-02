@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light cyan background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff; /* White background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    width: 350px; /* Increased width for better readability */
+    text-align: center; /* Center align text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+h1 {
+    color: #00796b; /* Dark cyan color for the header */
+    margin-bottom: 20px;
+    font-size: 28px; /* Increased font size */
+    font-weight: bold; /* Bold text */
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#symptom-selection {
+    margin-bottom: 20px;
+}
+
+#symptom-list {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #00796b; /* Border color matching header */
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+#symptom-list:focus {
+    border-color: #004d40; /* Change border color on focus */
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    background-color: #00796b; /* Matching button color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth color transition and scaling */
+    font-size: 16px; /* Slightly larger font size */
+}
+
+button:hover {
+    background-color: #004d40; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #ffffff; /* White background for list items */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #004d40; /* Border color for items */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    animation: fadeIn 1s ease-out; /* Fade-in animation for list items */
+}
+
+li:hover {
+    background-color: #e0f2f1; /* Light cyan on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+#filtered-diseases {
+    margin-top: 20px;
+}
+
+#filtered-diseases ul {
+    margin-top: 0; /* Remove margin at the top of the filtered diseases list */
+}

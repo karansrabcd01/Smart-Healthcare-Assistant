@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Healthcare Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Healthcare Assistant</h1>
+        <p>Select your symptoms to filter possible diseases:</p>
+        <div id="symptom-selection">
+            <select id="symptom-list">
+                <option value="">Select a symptom</option>
+                <!-- Symptoms will be dynamically added here -->
+            </select>
+            <button id="add-symptom">Add Symptom</button>
+        </div>
+        <div id="selected-symptoms">
+            <h3>Selected Symptoms:</h3>
+            <ul id="symptoms-list">
+                <!-- Selected symptoms will appear here -->
+            </ul>
+        </div>
+        <div id="filtered-diseases">
+            <h3>Possible Diseases:</h3>
+            <ul id="disease-list">
+                <!-- Filtered diseases will appear here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
